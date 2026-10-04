@@ -1,0 +1,95 @@
+{
+  "baseline": {
+    "mawps": {
+      "n": 167,
+      "f1": 100.0,
+      "em": 100.0
+    },
+    "all": {
+      "n": 313,
+      "f1": 54.6,
+      "em": 54.6
+    },
+    "indicqa": {
+      "n": 146,
+      "f1": 2.7,
+      "em": 2.7
+    }
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "model_dir": "/Users/siddharth/Documents/nlp_project/model/muril_seed42",
+      "trained": false,
+      "metrics": {
+        "mawps": {
+          "n": 167,
+          "f1": 100.0,
+          "em": 100.0
+        },
+        "all": {
+          "n": 313,
+          "f1": 80.3,
+          "em": 75.4
+        },
+        "indicqa": {
+          "n": 146,
+          "f1": 57.7,
+          "em": 47.3
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "model_dir": "/Users/siddharth/Documents/nlp_project/model/muril_seed123",
+      "minutes": 169.5,
+      "epochs_ran": 9,
+      "best_epoch": 6.0,
+      "best_val_loss": 1.123064398765564,
+      "trained": true,
+      "metrics": {
+        "mawps": {
+          "n": 167,
+          "f1": 100.0,
+          "em": 100.0
+        },
+        "all": {
+          "n": 313,
+          "f1": 82.3,
+          "em": 77.6
+        },
+        "indicqa": {
+          "n": 146,
+          "f1": 62.0,
+          "em": 52.1
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "model_dir": "/Users/siddharth/Documents/nlp_project/model/muril_seed7",
+      "minutes": 171.0,
+      "epochs_ran": 9,
+      "best_epoch": 6.0,
+      "best_val_loss": 1.1919077634811401,
+      "trained": true,
+      "metrics": {
+        "mawps": {
+          "n": 167,
+          "f1": 100.0,
+          "em": 100.0
+        },
+        "all": {
+          "n": 313,
+          "f1": 80.3,
+          "em": 76.0
+        },
+        "indicqa": {
+          "n": 146,
+          "f1": 57.7,
+          "em": 48.6
+        }
+      }
+    }
+  ]
+}

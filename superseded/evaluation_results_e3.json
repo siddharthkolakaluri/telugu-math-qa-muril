@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "label": "Baseline (no fine-tuning)",
+    "f1": 0.0385,
+    "em": 0.0,
+    "f1_pct": 3.8,
+    "em_pct": 0.0,
+    "n": 47
+  },
+  "finetuned": {
+    "label": "Fine-tuned MuRIL",
+    "f1": 0.6444,
+    "em": 0.5106,
+    "f1_pct": 64.4,
+    "em_pct": 51.1,
+    "n": 47
+  },
+  "test_size": 47,
+  "model_path": "/Users/siddharth/Documents/nlp_project/model/muril_telugu_math"
+}

@@ -1,0 +1,51 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+================================================================
+device: mps   SMOKE=False   seeds: [42, 123, 7]
+================================================================
+loaded train: 2,504
+loaded val: 313
+loaded test: 313
+
+tokenizing train...
+   features: 2,504  (answer-bearing 2504, skipped 0)
+tokenizing val...
+   features: 313  (answer-bearing 313, skipped 0)
+
+rule-based baseline -> MAWPS F1 100.0, IndicQA F1 2.7
+
+----------------------------------------------------------------
+SEED 42  ->  /Users/siddharth/Documents/nlp_project/model/muril_seed42
+   model dir exists -> skipping training, evaluating only
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19284.38it/s]
+   -> IndicQA F1 62.0 EM 50.7 | MAWPS F1 100.0 | all F1 82.3
+
+----------------------------------------------------------------
+SEED 123  ->  /Users/siddharth/Documents/nlp_project/model/muril_seed123
+   model dir exists -> skipping training, evaluating only
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 21397.86it/s]
+   -> IndicQA F1 4.4 EM 2.1 | MAWPS F1 91.6 | all F1 50.9
+
+----------------------------------------------------------------
+SEED 7  ->  /Users/siddharth/Documents/nlp_project/model/muril_seed7
+   model dir exists -> skipping training, evaluating only
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6922.67it/s]
+   -> IndicQA F1 5.3 EM 3.4 | MAWPS F1 88.0 | all F1 49.4
+
+================================================================
+PER-SEED RESULTS
+================================================================
+  seed |  IndicQA F1  IndicQA EM |  MAWPS F1 |  all F1
+    42 |        62.0        50.7 |     100.0 |    82.3
+   123 |         4.4         2.1 |      91.6 |    50.9
+     7 |         5.3         3.4 |      88.0 |    49.4
+
+================================================================
+MEAN +/- STD  (n = 3 seeds)
+================================================================
+  Rule-based baseline  IndicQA F1 2.7   MAWPS F1 100.0
+  Fine-tuned  IndicQA  F1 23.9 +/- 33.0   EM 18.7 +/- 27.7
+  Fine-tuned  MAWPS    F1 93.2 +/- 6.2   EM 93.2 +/- 6.2
+  Fine-tuned  overall  F1 60.9 +/- 18.6   EM 58.5 +/- 16.1
+
+saved -> /Users/siddharth/Documents/nlp_project/results/multiseed_results.json
+Paste this whole summary back and I'll fold mean +/- std into the paper.
